@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="../css/api.css"/>
+		<style>
+			html, body {
+				width: 100%;
+				min-height: 100%;
+				background: url(../image/loginbg.png) no-repeat;
+				background-size: 100%;
+			}
+			.logo {
+				background: url(../image/login_logo.png) no-repeat center 46px;
+				background-size: auto 36px;
+				height: 126px;
+			}
+			.login_cont {
+				width: 80%;
+				margin: 0 auto;
+			}
+			.adm_img, .pwd_img {
+				width: 44px;
+				height: 44px;
+			}
+			.adm_img img, .pwd_img img {
+				max-width: 100%;
+				vertical-align: middle;
+			}
+			.admin input, .pwd input {
+				background: #FFFFFF;
+				opacity: .3;
+				width: 78%;
+				height: 44px;
+				line-height: 44px;
+				border-radius: 6px;
+				text-indent: 10px;
+				border: none;
+				outline: none;
+				margin-top: 30px;
+			}
+			.but_group {
+				width: 70%;
+				margin: 50px auto;
+			}
+			.but_group a {
+				width: 100%;
+				margin: 20px auto;
+				text-align: center;
+				color: #FFFFFF;
+				height: 44px;
+				line-height: 44px;
+				border: none;
+				border-radius: 6px;
+			}
+			.login {
+				background: #6ED6D7;
+				opacity: .7;
+			}
+			.login:hover {
+				opacity: 1;
+			}
+			.reg {
+				background: #E77843;
+				opacity: .6;
+			}
+			.reg:hover {
+				opacity: 1;
+			}
+			a, button {
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="logo clearfix"></div>
+		<div class="login_cont clearfix">
+			<div class="admin clearfix">
+				<span class="adm_img"><img src="../image/adminName.png"/></span>
+				<input type="text" placeholder="账号名称">
+			</div>
+			<div class="pwd clearfix">
+				<span class="pwd_img"><img src="../image/password.png"/></span>
+				<input type="password" placeholder="密码">
+			</div>
+			<div class="but_group clearfix">
+				<a class="login clearfix" href="../html/login.html">登录</a>
+				<a class="reg clearfix" href="../html/register.html">注册</a>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script type="text/javascript">
+		apiready = function() {
+		};
+	</script>
+</html>

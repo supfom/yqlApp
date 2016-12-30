@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>商城首页</title>
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="stylesheet" type="text/css" href="../css/api.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<style>
+			.shopText {
+				text-align: center;
+				line-height: 1.8
+			}
+			.shopText .money {
+				color: #F97B02;
+			}
+			.shopCon {
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 30px
+			}
+			.shopCon img {
+				max-width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id='slide' class='swipe'>
+			<div class='swipe-wrap' id="banner-content">
+				<div onclick="" tapmode="">
+					<img src="../res/images/banner.png"/>
+				</div>
+				<div onclick="" tapmode="">
+					<img src="../res/images/banner.png"/>
+				</div>
+				<div onclick="" tapmode="">
+					<img src="../res/images/banner.png"/>
+				</div>
+				<div onclick="" tapmode="">
+					<img src="../res/images/banner.png"/>
+				</div>
+				<div onclick="" tapmode="">
+					<img src="../res/images/banner.png"/>
+				</div>
+			</div>
+			<div id="pointer">
+				<a class="active"></a>
+				<a></a>
+				<a></a>
+				<a></a>
+				<a></a>
+			</div>
+		</div>
+		<div class="shopText">
+			<p class="shopName">
+				九牧 7116-183快开单冷 拖把池 水龙头 全铜
+			</p>
+			<p class="money">
+				￥235.00
+			</p>
+		</div>
+		<div class="shopCon">
+			<img src="../res/detail/shopDetail01.png">
+			<img src="../res/detail/shopDetail02.png">
+		</div>
+	</body>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script type="text/javascript" src="../script/swipe.js"></script>
+	<script>
+		apiready = function() {
+			api.setRefreshHeaderInfo({
+				visible : true,
+				bgColor : 'rgba(0,0,0,0)',
+				textColor : '#666',
+				textDown : '下拉刷新',
+				textUp : '释放刷新'
+			}, function(ret, err) {
+				api.refreshHeaderLoadDone();
+			});
+		};
+		function initSlide() {
+			var $pointer = $api.byId('pointer');
+			window.mySlide = Swipe(slide, {
+				continuous : true,
+				disableScroll : true,
+				stopPropagation : true,
+				callback : function(index, element) {
+					console.log();
+					var $actA = $api.dom($pointer, 'a.active');
+					$api.removeCls($actA, 'active');
+					$api.addCls($api.eq($pointer, index + 1), 'active');
+				},
+				transitionEnd : function(index, element) {
+				}
+			});
+		}
+
+		initSlide();
+	</script>
+</html>

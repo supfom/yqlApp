@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>frame</title>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<link rel="stylesheet" type="text/css" href="../css/api.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<style>
+			html, body {
+				width: 100%;
+				min-height: 100%;
+				background: #DDDDDD;
+			}
+			.main {
+				background: #FFFFFF;
+				word-break: 100%;
+			}
+			.pull-left {
+				float: left;
+			}
+			.pull-right {
+				float: right;
+			}
+			.cont_top {
+				background: url(../image/orderResult.png) no-repeat 12px;
+				background-size: auto 80px;
+				height: 138px;
+				border-bottom: 4px solid #DDDDDD;
+			}
+			.text_top {
+				font-size: 20px;
+				margin-left: 115px;
+				color: #6ED6D7;
+				margin-top: 74px;
+			}
+			.text_buttom {
+				margin-left: 30px;
+				margin-top: 10px;
+				color: #6ED6D7;
+			}
+			.cont_text {
+				background: #FFFFFF;
+			}
+			.cont_text p {
+				padding: 10px;
+				height: 20px;
+				line-height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			<div class="cont_top clearfix">
+				<label class="text_top">恭喜您！订单已生成</label>
+				<label class="text_buttom">商家会派遣千里马尽快将商品送达~</label>
+			</div>
+			<div class="cont_text clearfix">
+				<p>
+					<label class="orderNum pull-left">订单号：123644895236001</label>
+					<label class="detail pull-right" onclick="">订单详情</label>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

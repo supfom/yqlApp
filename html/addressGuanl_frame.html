@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>title</title>
+		<link rel="stylesheet" type="text/css" href="../css/api.css"/>
+		<style>
+			html, body {
+				width: 100%;
+				min-height: 100%;
+				background: #e5e5e5;
+			}
+			.shop_name {
+				margin-bottom: 6px;
+				background-color: #FFF;
+			}
+			.shop_name_left {
+				width: 100%;
+				padding: 10px 0px;
+			}
+			.shop_name .edit_icon {
+				width: 18px;
+				height: 18px;
+				background: url(../image/tm_mcart_ic_edit.png) center center no-repeat;
+				background-size: 100% 100%;
+				vertical-align: bottom;
+			}
+			.pull-left {
+				float: left;
+			}
+			.pull-right {
+				float: right;
+			}
+			.shop_item_adress {
+				padding: 6px 0px;
+				width: 100%;
+				float: left;
+			}
+			.shop_adress_edit {
+				background-color: #FFF;
+				width: 100%;
+				padding: 20px 0px;
+				text-align: center;
+				color: #7B7B7B;
+			}
+			.delete img {
+				width: 24px;
+				vertical-align: middle;
+			}
+			.piaochecked {
+				width: 20px;
+				height: 20px;
+				float: left;
+				margin-top: 78px;
+				cursor: pointer;
+				margin-left: 10px;
+				text-align: center;
+				background-image: url(../image/guanl.png);
+				background-repeat: no-repeat;
+				background-size: 100%;
+			}
+			.on_check {
+				background-image: url(../image/guanl01.png);
+			}
+			.radioclass {
+				opacity: 0;
+				cursor: pointer;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+				filter: alpha(opacity=0);
+			}
+			.shop_item_adress_list {
+				margin-left: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="shop">
+			<!--adress   STR-->
+			<div class="shop_name clearfix">
+				<div class="piaochecked">
+					<input name="need_inv" type="radio" style="height:20px;width:20px;" class="radioclass input" value="1">
+				</div>
+				<div class="shop_item_adress_list">
+					<label class="pull-right" style="padding-right: 4px;margin-top: 8px;" onclick="openAdressEdit()"> <label class="pull-right">编辑</label> <i class="edit_icon pull-right"></i> </label>
+					<p class="shop_item_adress clearfix">
+						<span>收货人：</span><label>王小利</label>
+					</p>
+					<p class="shop_item_adress clearfix">
+						<span>收货地址：</span><label>深圳市南山区粤海街道华润置地大厦E座40层</label>
+					</p>
+					<p class="shop_item_adress clearfix">
+						<span>联系电话：</span><label>13651395052</label>
+					</p>
+					<p class="shop_item_adress clearfix">
+						<span class="mor_radio">
+							<input type="radio" name="danx" id="lid">
+							设为默认</span>
+						<span class="delete"><img src="../image/delete.png">删除</span>
+					</p>
+				</div>
+			</div>
+			<div class="shop_name clearfix">
+				<div class="piaochecked">
+					<input name="need_inv" type="radio" style="height:20px;width:20px;" class="radioclass input" value="1">
+				</div>
+				<div class="shop_item_adress_list">
+					<label class="pull-right" style="padding-right: 4px;margin-top: 8px;" onclick="openAdressEdit()"> <label class="pull-right">编辑</label> <i class="edit_icon pull-right"></i> </label>
+					<p class="shop_item_adress clearfix">
+						<span>收货人：</span><label>王小利</label>
+					</p>
+					<p class="shop_item_adress clearfix">
+						<span>收货地址：</span><label>深圳市南山区粤海街道华润置地大厦E座40层</label>
+					</p>
+					<p class="shop_item_adress clearfix">
+						<span>联系电话：</span><label>13651395052</label>
+					</p>
+					<p class="shop_item_adress clearfix">
+						<span class="mor_radio">
+							<input type="radio" name="danx" id="lid">
+							设为默认</span>
+						<span class="delete"><img src="../image/delete.png">删除</span>
+					</p>
+				</div>
+			</div>
+			<div class="shop_adress_edit">
+				<img src="../image/jia.png" onclick="openAdressEdit()">
+				<p>
+					新增收货人信息
+				</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script src="../script/jquery-1.8.3.min.js"  charset="utf-8"></script>
+	<script type="text/javascript">
+		apiready = function() {
+		};
+		function openAdressEdit() {
+			api.openWin({
+				name : 'addressEdit',
+				url : './addressEdit.html'
+			});
+		}
+
+//			//或者这么写
+		$(".piaochecked").on("click", function() {
+			$(this).addClass("on_check");
+			$(this).parent().siblings(".shop_name").children(".piaochecked").removeClass("on_check");
+		});
+
+	</script>
+</html>

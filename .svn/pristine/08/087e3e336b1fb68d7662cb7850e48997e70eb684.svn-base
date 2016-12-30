@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<title>window</title>
+		<link rel="stylesheet" type="text/css" href="../css/api.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<style>
+			/* 头部样式 */
+			.topbar {
+				background: #6ED6D7;
+				height: 50px;
+				border-bottom: 1px solid #DDDFE3;
+			}
+			.topbar_title {
+				display: inline-block;
+				font-size: 20px;
+				line-height: 50px;
+				padding-left: 12px;
+			}
+			.hr01, .hr02 {
+				height: 28px;
+			}
+			.headerico {
+				padding: 11px 15px 11px 15px;
+			}
+			.headericohover {
+				background: #6ED6D7;
+			}
+			.fr {
+				float: right;
+			}
+			.fl {
+				float: left;
+			}
+			/*第一头部*/
+			#logo {
+				padding: 11px 0 0 10px;
+				height: 28px;
+			}
+			#citylist {
+				height: 50px;
+				line-height: 50px;
+				padding-left: 15px;
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+			.finish {
+				height: 50px;
+				line-height: 50px;
+				padding-right: 15px;
+				font-size: 18px;
+				color: #FFFFFF;
+			}
+			.back {
+				vertical-align: top;
+				width: 20px;
+				padding-top: 15px;
+			}
+			.search {
+				height: 34px;
+				text-align: center;
+				line-height: 34px;
+				padding-left: 10px;
+				border-radius: 30px;
+				margin-top: 8px;
+				position: absolute;
+				left: 20px;
+				right: 60px;
+				font-size: 14px;
+			}
+			.search img {
+				vertical-align: top;
+				width: 20px;
+				padding-top: 7px;
+				padding-right: 10px;
+			}
+			.firstSearch {
+				left: 60px;
+				right: 60px;
+				color: #999;
+			}
+			.firstSearch input {
+				width: 100%;
+				border-radius: 10px;
+				outline: none;
+				color: #404040;
+				text-indent: 4px;
+			}
+			/*.firstSearch .sear_img{
+			 float: right;
+			 margin-top:-32px;
+			 }
+			 .firstSearch input:focus{
+			 outline: none;
+			 }	*/
+			/* 头部切换样式 */
+			.titlebar {
+				display: none;
+			}
+			.activebar {
+				display: block;
+			}
+			/* 本地刷新图标 */
+			#localrefresh {
+				display: none;
+				float: right;
+				width: 40px;
+				padding: 5px 10px;
+			}
+			.footer {
+				width: 100%;
+				height: 60px;
+				position: fixed;
+				bottom: 0;
+				background-color: #3F3F3F;
+				color: #B3B3B3;
+			}
+			.footer ul {
+				width: 100%;
+			}
+			.footer ul li {
+				height: 60px;
+				line-height: 60px;
+				float: left;
+				font-size: 18px;
+				text-align: center;
+				color: #FFFFFF;
+			}
+			.kbai {
+				width: 34%
+			}
+			.colson {
+				width: 33%;
+			}
+			.sure {
+				width: 33%;
+			}
+			.active {
+				background: #4d4d4d;
+			}
+			.on {
+				background: #E46523;
+			}
+			.adress {
+				padding: 6px;
+				margin: 0px 15px;
+			}
+			.adress span {
+				width: 100%;
+				color: #969696;
+				margin-top: 10px;
+			}
+			.adress input {
+				width: 100%;
+				font-size: 16px;
+				border-radius: 6px;
+				background: #efeeee;
+				height: 40px;
+				line-height: 40px;
+				color: #969696;
+				outline: none;
+				text-indent: 4px;
+			}
+			.adress_edit input {
+			  width: 30%;
+		      text-overflow: ellipsis;
+		      word-spacing: normal;
+		      word-wrap: break-word;
+		      padding-left: 7px;
+			}
+			.phone_edit {
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<!-- 第一头部 -->
+			<div id="header" class="titlebar activebar">
+				<div class="topbar">
+					<div class="citylist fl" id="citylist" tapmode onclick="api.closeWin();"><img src="../image/back.png" alt="" class="back">返回
+					</div>
+					<div class="search firstSearch">
+						<!--<input type="text" id="search" name="search" ><img class="sear_img" src="../image/search.png">-->
+						<span style="font-size: 20px;color: #FFFFFF;">收货信息</span>
+					</div>
+					<div class="finish fr" onclick="openAddressList();">
+						保存
+					</div>
+				</div>
+			</div>
+			<div id="main">
+				<div class="adress">
+					<div class="name_edit">
+						<span>收货人：</span>
+						<input type="text" id="name">
+					</div>
+					<div class="adress_edit">
+						<span>选择省：</span>
+						<input type="text" id="sheng" placeholder="选择省份">
+						<input type="text" id="shi" placeholder="选择城市">
+						<input type="text" id="shi" placeholder="选择区县">
+					</div>
+					<div class="detail_edit">
+						<span>详细地址：</span>
+						<input type="text" id="qu" placeholder="详细地址（街道门牌号）">
+					</div>
+					<div class="code_edit">
+						<span>邮政编码：</span>
+						<input type="text" id="name">
+					</div>
+					<div class="phone_edit">
+						<span>联系电话：</span>
+						<input type="text" id="name" placeholder="你收货需要的电话">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script type="text/javascript" src="../script/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		apiready = function() {
+		};
+		function openAddressList() {
+			api.openWin({
+				name : 'addressList_window',
+				url : './addressList_window.html'
+			});
+		}
+	</script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>	
+<html>	
+<head>	
+	<meta charset="utf-8">	
+	<title>商品分类</title>	
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>	
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">	
+	<link rel="stylesheet" type="text/css" href="../css/api.css" />	
+	
+	<style>	
+		body,html{
+		
+			background: #E4E4E4;
+		}
+		.list {
+				position: relative;
+				z-index: 10;
+				background: #E4E4E4;
+			}
+			.list ul {
+				border-top-left-radius: 60px;
+				position: relative;
+				width: 100%;
+				background: #E4E4E4;
+			}
+			.list ul li {
+				margin-bottom:6px;
+				width: 100%;
+				height: 40px;
+				font-size:16px;
+				line-height: 40px;
+				background: #FFFFFF;
+				color: #8D8D8D;
+			}
+			.list ul li img {
+				margin: 8px;
+				float: left;
+				vertical-align: middle
+			}
+			.right {
+				float: right;
+			}
+			.right img {
+				margin-right: 20px;
+			}
+	
+	</style>	
+</head>	
+<body>	
+	<div class="list">
+				<ul>
+					<li><img src="../image/zxjc.png">装修建材 <span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+					<li><img src="../image/jjby.png">家居布艺<span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+					<li><img src="../image/jydq.png">家用电器<span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+					<li><img src="../image/ppjj.png">品牌家具 <span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+					<li><img src="../image/bhxsp.png">百货小商品 <span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+					<li><img src="../image/wjjd.png">五金机电 <span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+					<li><img src="../image/qpxc.png">汽配型材 <span class="right"><img src="../image/jiantoushang.png"></span>
+					</li>
+				</ul>
+			</div>
+	
+	
+</body>	
+<script type="text/javascript" src="../script/api.js"></script>	
+<script>	
+	
+</script>	
+</html>	

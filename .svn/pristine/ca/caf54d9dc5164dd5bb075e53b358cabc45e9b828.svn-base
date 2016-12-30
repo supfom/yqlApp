@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>frame</title>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<link rel="stylesheet" type="text/css" href="../css/api.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<style>
+			html, body {
+				width: 100%;
+				min-height: 100%;
+				background: #e5e5e5;
+			}
+			.h80 {
+				height: 80px;
+			}
+			.h40 {
+				height: 40px;
+			}
+			.h20 {
+				height: 20px;
+			}
+			.hightitem {
+				background-color: #fff;
+			}
+			.inwrap {
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			.empty .logo {
+				float: left;
+				margin-left: 20px;
+			}
+			.empty .logo img {
+				height: 100px;
+			}
+			.empty .msg {
+				height: 100px;
+				line-height: 100px;
+				margin-left: 120px;
+			}
+			.shop {
+				background-color: #FFF;
+				margin-top: 6px;
+			}
+			.shop span {
+				font-size: 12px;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+			.shop_name {
+				height: 53px;
+			}
+			.shop_name_left {
+			}
+			.shop .checkBox {
+				display: inline-block;
+				background: url(../res/images/checkOn.png) center center no-repeat;
+				background-size: 100% 100%;
+				width: 17px;
+				height: 17px;
+				margin: 18px 12px;
+			}
+			.shop .checkBox.active {
+				background: url(../res/images/checkOff.png) center center no-repeat;
+				background-size: 100% 100%;
+			}
+			.shop_name_text {
+				font-size: 14px;
+				line-height: 53px;
+			}
+			.shop_item_group {
+			}
+			.shop_item {
+				width: 100%;
+				display: -webkit-box;
+				-webkit-box-orient: horizontal;
+				display: -webkit-flex;
+				display: flex;
+				position: relative;
+				padding: 6px 0;
+			}
+			.shop_item_left {
+				position: relative;
+			}
+			.item_icon {
+				width: 53px;
+				margin-left: 4px;
+			}
+			.shop_item_center {
+				position: relative;
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				flex: 1;
+				padding-left: 7px;
+				width: 0%;
+			}
+			.shop_item_center .title {
+				display: block;
+				line-height: 17px;
+				text-indent: 0 !important;
+			}
+			.shop_item_center .description {
+				display: block;
+				line-height: 17px;
+			}
+			.shop_item_center .classify {
+				display: block;
+				color: #9E9E9E;
+				line-height: 14px;
+			}
+			.tag_group .tag {
+				height: 12px;
+			}
+			.shop_item_right {
+				text-align: right;
+				position: relative;
+				width: 50px;
+				color: #E46528;
+				padding-right: 7px;
+			}
+			.shop_item_right .price {
+				margin-bottom: 10px;
+			}
+			.pull-left {
+				float: left;
+			}
+			.pull-right {
+				float: right;
+			}
+			.orderNum {
+				border-bottom: 1px solid #CCC;
+				padding: 4px;
+			}
+			.money {
+				text-align: center;
+				padding: 4px;
+				line-height: 30px;
+				line-height: 20px;
+				border-bottom: 1px solid #CCC;
+				border-top: 1px solid #CCC;
+			}
+			.money label {
+				color: #6ED6D7;
+				padding: 0px 6px;
+				font-weight: bold;
+			}
+			.but_group {
+				padding: 6px;
+			}
+			.but_group a {
+				border: #9d9d9d solid 1px;
+				color:#9d9d9d;
+				font-size: 12px;
+				border-radius: 6px;
+				padding: 4px 12px;
+				margin-left: 6px;
+			}
+			.but_group .active{
+				color: #E46523;
+				border: #E46523 solid 1px;
+			}
+		</style>
+		</style>
+	</head>
+	<body>
+		<!--<div class="empty">
+		<div class="h20"></div>
+		<div class="logo"><img src="../image/empty_page_nothing.png"></div>
+		<div class="msg">暂无消息</div>
+		</div>	-->
+		<div class="shop">
+			<div class="orderNum clearfix">
+				<span class="pull-left">订单号:<label>XLHMSJ201642015885</label></span>
+				<span class="pull-right">代发货</span>
+			</div>
+			<div class="shop_item_group">
+				<!-- 单个宝贝 -->
+				<div class="shop_item clearfix">
+					<div class="shop_item_left pull-left">
+						<img src="../image/cart_item_icon1.png" alt="" class="item_icon">
+					</div>
+					<div class="shop_item_center" tapmode="tap-active" >
+						<span class="title">欧式席梦思床垫</span>
+						<span class="description"> 全国统一进口欧式经典实木席梦思大床垫</span>
+						<span class="classify"> 材质：实木；尺码：1.2*1.8 </span>
+					</div>
+					<div class="shop_item_right pull-right">
+						<span class="price">￥1299.00</span>
+						<div class="count_group clearfix">
+							<i class="edit_icon pull-right"></i>
+							<span class="count pull-right">1</span>
+							<span class="multiply pull-right">×</span>
+						</div>
+					</div>
+				</div>
+				<div class="shop_item clearfix">
+					<div class="shop_item_left pull-left">
+						<img src="../image/cart_item_icon1.png" alt="" class="item_icon">
+					</div>
+					<div class="shop_item_center" tapmode="tap-active" >
+						<span class="title">欧式席梦思床垫</span>
+						<span class="description"> 全国统一进口欧式经典实木席梦思大床垫</span>
+						<span class="classify"> 材质：实木；尺码：1.2*1.8 </span>
+					</div>
+					<div class="shop_item_right pull-right">
+						<span class="price">￥1299.00</span>
+						<div class="count_group clearfix">
+							<i class="edit_icon pull-right"></i>
+							<span class="count pull-right">1</span>
+							<span class="multiply pull-right">×</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="money clearfix">
+				<span class="count">共计:<label>3</label>商品</span>
+				<span class="count pull-right">总结:<label>1780.00</label></span>
+			</div>
+			<div class="but_group clearfix">
+				<a class="pull-right" onclick="">联系客服</a>
+			</div>
+		</div>
+		<div class="shop">
+			<div class="orderNum clearfix">
+				<span class="pull-left">订单号:<label>XLHMSJ201642015885</label></span>
+				<span class="pull-right">代发货</span>
+			</div>
+			<div class="shop_item_group">
+				<!-- 单个宝贝 -->
+				<div class="shop_item clearfix">
+					<div class="shop_item_left pull-left">
+						<img src="../image/cart_item_icon1.png" alt="" class="item_icon">
+					</div>
+					<div class="shop_item_center" tapmode="tap-active" >
+						<span class="title">欧式席梦思床垫</span>
+						<span class="description"> 全国统一进口欧式经典实木席梦思大床垫</span>
+						<span class="classify"> 材质：实木；尺码：1.2*1.8 </span>
+					</div>
+					<div class="shop_item_right pull-right">
+						<span class="price">￥1299.00</span>
+						<div class="count_group clearfix">
+							<i class="edit_icon pull-right"></i>
+							<span class="count pull-right">1</span>
+							<span class="multiply pull-right">×</span>
+						</div>
+					</div>
+				</div>
+				<div class="shop_item clearfix">
+					<div class="shop_item_left pull-left">
+						<img src="../image/cart_item_icon1.png" alt="" class="item_icon">
+					</div>
+					<div class="shop_item_center" tapmode="tap-active" >
+						<span class="title">欧式席梦思床垫</span>
+						<span class="description"> 全国统一进口欧式经典实木席梦思大床垫</span>
+						<span class="classify"> 材质：实木；尺码：1.2*1.8 </span>
+					</div>
+					<div class="shop_item_right pull-right">
+						<span class="price">￥1299.00</span>
+						<div class="count_group clearfix">
+							<i class="edit_icon pull-right"></i>
+							<span class="count pull-right">1</span>
+							<span class="multiply pull-right">×</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="money clearfix">
+				<span class="count">共计:<label>3</label>商品</span>
+				<span class="count pull-right">总结:<label>1780.00</label></span>
+			</div>
+			<div class="but_group clearfix">
+				<a class="pull-right" onclick="">查看物流</a>
+				<a class="pull-right active" onclick="">确认收货</a>
+				<a class="pull-right" onclick="">联系客服</a>
+			</div>
+		</div>
+		<div class="shop">
+			<div class="orderNum clearfix">
+				<span class="pull-left">订单号:<label>XLHMSJ201642015885</label></span>
+				<span class="pull-right">代发货</span>
+			</div>
+			<div class="shop_item_group">
+				<!-- 单个宝贝 -->
+				<div class="shop_item clearfix">
+					<div class="shop_item_left pull-left">
+						<img src="../image/cart_item_icon1.png" alt="" class="item_icon">
+					</div>
+					<div class="shop_item_center" tapmode="tap-active" >
+						<span class="title">欧式席梦思床垫</span>
+						<span class="description"> 全国统一进口欧式经典实木席梦思大床垫</span>
+						<span class="classify"> 材质：实木；尺码：1.2*1.8 </span>
+					</div>
+					<div class="shop_item_right pull-right">
+						<span class="price">￥1299.00</span>
+						<div class="count_group clearfix">
+							<i class="edit_icon pull-right"></i>
+							<span class="count pull-right">1</span>
+							<span class="multiply pull-right">×</span>
+						</div>
+					</div>
+				</div>
+				<div class="shop_item clearfix">
+					<div class="shop_item_left pull-left">
+						<img src="../image/cart_item_icon1.png" alt="" class="item_icon">
+					</div>
+					<div class="shop_item_center" tapmode="tap-active" >
+						<span class="title">欧式席梦思床垫</span>
+						<span class="description"> 全国统一进口欧式经典实木席梦思大床垫</span>
+						<span class="classify"> 材质：实木；尺码：1.2*1.8 </span>
+					</div>
+					<div class="shop_item_right pull-right">
+						<span class="price">￥1299.00</span>
+						<div class="count_group clearfix">
+							<i class="edit_icon pull-right"></i>
+							<span class="count pull-right">1</span>
+							<span class="multiply pull-right">×</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="money clearfix">
+				<span class="count">共计:<label>3</label>商品</span>
+				<span class="count pull-right">总结:<label>1780.00</label></span>
+			</div>
+			<div class="but_group clearfix">
+				<a class="pull-right active" onclick="">我要评价</a>
+				<a class="pull-right" onclick="">联系客服</a>
+			</div>
+		</div>
+	</body>
+</html>

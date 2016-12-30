@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>frame</title>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<link rel="stylesheet" type="text/css" href="../css/api.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<style>
+			html, body {
+				width: 100%;
+				min-height: 100%;
+				background: #e5e5e5;
+			}
+			/*.h80 {height: 80px;}
+			 .h40 {height: 40px;}*/
+			.h20 {
+				height: 20px;
+			}
+			.h10 {
+				height: 10px;
+				background: #e5e5e5;
+			}
+			.h1 {
+				height: 1px;
+				margin-left: 15px;
+				background: #e5e5e5;
+			}
+			.fr {
+				float: right;
+			}
+			.fl {
+				float: left;
+			}
+			.hightitem {
+				background-color: #fff;
+			}
+			.inwrap {
+				margin: 0 10px;
+			}
+			/* 2X2样式 */
+			.row {
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+			}
+			.col {
+				-webkit-box-flex: 1;
+				-webkit-flex: 1;
+				flex: 1;
+				position: relative;
+			}
+			.col img {
+				position: absolute;
+				right: 0;
+				width: 80px;
+				top: 0;
+			}
+			.col .matrixcell {
+				display: table-cell;
+				vertical-align: middle;
+				padding-left: 10px;
+			}
+			.col .matrixcell .title {
+				margin-bottom: 10px;
+			}
+			.matrix {
+				display: table;
+				height: inherit;
+			}
+			/* 1. 2X2 */
+			.flipcard {
+				height: 30px;
+				width: 40px;
+				line-height: 30px;
+				text-align: center;
+				margin: 5px 5px 3px 5px;
+				color: #969696;
+				background-color: #fff;
+				font-size: 14px;
+			}
+			.darktitle {
+				height: 40px;
+				line-height: 40px;
+				margin-left: 15px;
+				font-size: 14px;
+				color: #666;
+			}
+			/* 2. 三列 */
+			.scratch02 .word {
+				margin-top: 10px;
+				margin-left: 4px;
+			}
+			.scratch02 .word .title {
+				font-size: 18px;
+			}
+			.scratch02 .word .info {
+				font-size: 12px;
+				color: #666;
+			}
+			.scratch02 img {
+				position: relative;
+				width: 40px;
+				height: 250px;
+			}
+			.showposter {
+				text-align: center;
+				margin-top: 5px;
+				padding-bottom: 10px;
+			}
+			/* 列表 */
+			.classify {
+				height: 40px;
+				line-height: 40px;
+				background-color: #fff;
+				position: relative;
+				border-bottom: 1px solid #e0e0e0;
+				margin-top: 3px;
+			}
+			.classify .sublogo {
+				width: 30px;
+				margin-top: 4px;
+				margin-left: 10px;
+				float: left;
+			}
+			.classify .arrow {
+				position: absolute;
+				vertical-align: top;
+				right: 15px;
+				top: 14px;
+				height: 14px;
+			}
+			.classify .info {
+				line-height: 10px;
+				float: left;
+				height: 40px;
+				margin-left: 3px;
+			}
+			.classify .info .title {
+				font-size: 15px;
+				margin-top: 15px;
+			}
+			.classify .info .subtitle {
+				font-size: 12px;
+				color: #666;
+				margin-top: 5px;
+			}
+			.subclass {
+				display: none;
+				color: #d9d9d9
+			}
+			.subclass .flipcard {
+				margin: 0;
+			}
+			.brb {
+				border-right: 1px solid #e0e0e0;
+				border-bottom: 1px solid #e0e0e0;
+			}
+			.bb {
+				border-bottom: 1px solid #e0e0e0;
+			}
+			.zhjc {
+				color: #C6D568
+			}
+			.jjby {
+				color: #E19360
+			}
+			.jydq {
+				color: #799ADE
+			}
+			.ppjj {
+				color: #79C49C
+			}
+			.bhxsp {
+				color: #E0A3AF
+			}
+			.wjjd {
+				color: #73B9D9
+			}
+			.qpxc {
+				color: #BAABEC
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 2 列表 -->
+		<div class="classify" tapmode onclick="expandList('food')">
+			<img src="../image/zxjc.png" alt="" class="sublogo">
+			<div class="info">
+				<div class="title zhjc">
+					装修建材
+				</div>
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="foodarrow">
+		</div>
+		<div class="subclass" id="food"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					龙头
+				</div>
+				<div class="col flipcard brb">
+					坐便器
+				</div>
+				<div class="col flipcard br">
+					坐便器盖板
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					台盆
+				</div>
+				<div class="col flipcard brb">
+					地板
+				</div>
+				<div class="col flipcard br">
+					置物架
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					浴巾架
+				</div>
+				<div class="col flipcard brb">
+					浴室脚架
+				</div>
+				<div class="col flipcard br">
+					窗
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					楼梯
+				</div>
+				<div class="col flipcard brb">
+					门
+				</div>
+				<div class="col flipcard br">
+					开关
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					吸顶灯
+				</div>
+				<div class="col flipcard brb">
+					落地灯
+				</div>
+				<div class="col flipcard br">
+					吊灯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					乳胶漆
+				</div>
+				<div class="col flipcard brb">
+					油漆
+				</div>
+				<div class="col flipcard br">
+					瓷砖
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					花洒
+				</div>
+				<div class="col flipcard brb">
+					锁
+				</div>
+				<div class="col flipcard br">
+					防水涂料
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					吊顶
+				</div>
+				<div class="col flipcard brb">
+					腻子膏
+				</div>
+				<div class="col flipcard br">
+					墙纸
+				</div>
+			</div>
+		</div>
+		<div class="classify" tapmode onclick="expandList('fun')">
+			<img src="../image/jjby.png" alt="" class="sublogo">
+			<div class="info">
+				<div class="title jjby">
+					家居布艺
+				</div>
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="funarrow">
+		</div>
+		<div class="subclass" id="fun"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕头
+				</div>
+				<div class="col flipcard brb">
+					羽绒被
+				</div>
+				<div class="col flipcard br">
+					装饰工艺品
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					穿品套件
+				</div>
+				<div class="col flipcard brb">
+					羊毛被
+				</div>
+				<div class="col flipcard br">
+					毛毯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕芯
+				</div>
+				<div class="col flipcard brb">
+					窗帘
+				</div>
+				<div class="col flipcard br">
+					蚊帐
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					床褥
+				</div>
+				<div class="col flipcard brb">
+					地毯
+				</div>
+				<div class="col flipcard br">
+					凉席
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					门帘
+				</div>
+				<div class="col flipcard brb">
+					靠枕
+				</div>
+			</div>
+		</div>
+		<div class="classify" tapmode onclick="expandList('hotel')">
+			<img src="../image/jydq.png" alt="" class="sublogo">
+			<div class="info">
+				<div class="title jydq">
+					家用电器
+				</div>
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="hotelarrow">
+		</div>
+		<div class="subclass" id="hotel"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕头
+				</div>
+				<div class="col flipcard brb">
+					羽绒被
+				</div>
+				<div class="col flipcard br">
+					装饰工艺品
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					穿品套件
+				</div>
+				<div class="col flipcard brb">
+					羊毛被
+				</div>
+				<div class="col flipcard br">
+					毛毯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕芯
+				</div>
+				<div class="col flipcard brb">
+					窗帘
+				</div>
+				<div class="col flipcard br">
+					蚊帐
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					床褥
+				</div>
+				<div class="col flipcard brb">
+					地毯
+				</div>
+				<div class="col flipcard br">
+					凉席
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					门帘
+				</div>
+				<div class="col flipcard brb">
+					靠枕
+				</div>
+			</div>
+		</div>
+		<div class="classify" tapmode onclick="expandList('women')">
+			<img src="../image/ppjj.png" alt="" class="sublogo">
+			<div class="info">
+				<div class="title ppjj">
+					品牌家具
+				</div>
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="womenarrow">
+		</div>
+		<div class="subclass" id="women"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕头
+				</div>
+				<div class="col flipcard brb">
+					羽绒被
+				</div>
+				<div class="col flipcard br">
+					装饰工艺品
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					穿品套件
+				</div>
+				<div class="col flipcard brb">
+					羊毛被
+				</div>
+				<div class="col flipcard br">
+					毛毯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕芯
+				</div>
+				<div class="col flipcard brb">
+					窗帘
+				</div>
+				<div class="col flipcard br">
+					蚊帐
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					床褥
+				</div>
+				<div class="col flipcard brb">
+					地毯
+				</div>
+				<div class="col flipcard br">
+					凉席
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					门帘
+				</div>
+				<div class="col flipcard brb">
+					靠枕
+				</div>
+			</div>
+		</div>
+		<div class="classify" tapmode onclick="expandList('marrage')">
+			<img src="../image/bhxsp.png" alt="" class="sublogo">
+			<div class="info">
+				<div class="title bhxsp">
+					百货小商品
+				</div>
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="marragearrow">
+		</div>
+		<div class="subclass" id="marrage"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕头
+				</div>
+				<div class="col flipcard brb">
+					羽绒被
+				</div>
+				<div class="col flipcard br">
+					装饰工艺品
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					穿品套件
+				</div>
+				<div class="col flipcard brb">
+					羊毛被
+				</div>
+				<div class="col flipcard br">
+					毛毯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕芯
+				</div>
+				<div class="col flipcard brb">
+					窗帘
+				</div>
+				<div class="col flipcard br">
+					蚊帐
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					床褥
+				</div>
+				<div class="col flipcard brb">
+					地毯
+				</div>
+				<div class="col flipcard br">
+					凉席
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					门帘
+				</div>
+				<div class="col flipcard brb">
+					靠枕
+				</div>
+			</div>
+		</div>
+		<div class="classify" tapmode onclick="expandList('kids')">
+			<img src="../image/wjjd.png"  alt="" class="sublogo">
+			<div class="info">
+				<div class="title wjjd">
+					五金机电
+				</div>
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="kidsarrow">
+		</div>
+		<div class="subclass" id="kids"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕头
+				</div>
+				<div class="col flipcard brb">
+					羽绒被
+				</div>
+				<div class="col flipcard br">
+					装饰工艺品
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					穿品套件
+				</div>
+				<div class="col flipcard brb">
+					羊毛被
+				</div>
+				<div class="col flipcard br">
+					毛毯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕芯
+				</div>
+				<div class="col flipcard brb">
+					窗帘
+				</div>
+				<div class="col flipcard br">
+					蚊帐
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					床褥
+				</div>
+				<div class="col flipcard brb">
+					地毯
+				</div>
+				<div class="col flipcard br">
+					凉席
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					门帘
+				</div>
+				<div class="col flipcard brb">
+					靠枕
+				</div>
+			</div>
+		</div>
+		<div class="classify" tapmode onclick="expandList('shopping')">
+			<img src="../image/qpxc.png" alt="" class="sublogo">
+			<div class="info">
+				<div class="title qpxc">
+					汽配型材
+				</div>
+				<!--
+				<div class="subtitle">综合商场、超市/便利店、服饰鞋包、药店</div>	-->
+			</div>
+			<img src="../image/ic_arrow_down_black.png" alt="" class="arrow" id="shoppingarrow">
+		</div>
+		<div class="subclass" id="shopping"  data-click='0'>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕头
+				</div>
+				<div class="col flipcard brb">
+					羽绒被
+				</div>
+				<div class="col flipcard br">
+					装饰工艺品
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					穿品套件
+				</div>
+				<div class="col flipcard brb">
+					羊毛被
+				</div>
+				<div class="col flipcard br">
+					毛毯
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					枕芯
+				</div>
+				<div class="col flipcard brb">
+					窗帘
+				</div>
+				<div class="col flipcard br">
+					蚊帐
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					床褥
+				</div>
+				<div class="col flipcard brb">
+					地毯
+				</div>
+				<div class="col flipcard br">
+					凉席
+				</div>
+			</div>
+			<div class="row">
+				<div class="col flipcard brb">
+					门帘
+				</div>
+				<div class="col flipcard brb">
+					靠枕
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../script/api.js"></script>
+	<script>
+function expandList (type) {
+var food = document.getElementById(type);
+var click = food.getAttribute("data-click");
+if (click == 0) {
+// 点开
+food.setAttribute("data-click", 1);
+$api.dom('#'+type+'arrow').src = "../image/ic_arrow_up_black.png";
+food.style.display = 'block';
+}else {
+// 关闭
+food.setAttribute("data-click", 0);
+$api.dom('#'+type+'arrow').src = "../image/ic_arrow_down_black.png";
+food.style.display = 'none';
+}
+}
+	</script>
+</html>

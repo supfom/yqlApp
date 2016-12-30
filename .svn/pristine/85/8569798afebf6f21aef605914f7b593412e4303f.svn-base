@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>毅德购</title>
+		<link rel="stylesheet" type="text/css" href="../css/api.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style>
+			.ydText {
+				margin: 0 auto;
+				width: 100%;
+				height: 100%;
+			}
+			.ydText_img {
+				width: 100%;
+				text-align: center;
+				vertical-align: middle;
+				outline: none;
+			}
+			.ydText_img img {
+				max-width: 100%;
+			}
+			.ydText_cont {
+				color: #8D8D8D;
+				width: 100%;
+				line-height: 2;
+				margin: 20px 0px
+			}
+			.ydText_cont p {
+				padding: 0px 10px;
+				text-indent: 20px;
+			}
+			.ydText ul {
+				width: 100%;
+				text-align: center;
+				margin-top: 20px;
+			}
+			.ydText ul li {
+				width: 33%;
+				float: left;
+				font-size: 22px;
+				text-align: center;
+				color: #6ED6D7;
+			}
+			.ydText ul li img {
+				width: 50px;
+				height: 50px;
+			}
+			.lcs {
+				margin-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="ydText">
+			<div class="ydText_img">
+				<img src="../image/aboutYd.png">
+			</div>
+			<div class="ydText_cont">
+				<p>
+					"毅起来"致力于打造一个依托毅德商贸城实体市场的商贸全流程的O2O综合服务电商平台。
+				</p>
+				<p>
+					整个供应商、入驻商户、采购商、消费者、物流服务商的需求。实现"供应商-入驻商户-采购商-物流服务商-消费者"的资金流、信息流、物流全流程无缝对接
+				</p>
+				<p>
+					移动端、pc端同步进行,让您足不出户,体验极致购物服务。
+				</p>
+			</div>
+			<ul>
+				<li>
+					<div class="iconm"><img src="../image/ruz.png">
+					</div>
+					<p class="lcs">
+						入驻商户
+					</p>
+				</li>
+				<li>
+					<div class="iconm"><img src="../image/xians.png">
+					</div>
+					<p class="lcs">
+						线上消费
+					</p>
+				</li>
+				<li>
+					<div class="iconm"><img src="../image/wul.png">
+					</div>
+					<p class="lcs">
+						物流服务
+					</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<title>底部导航</title>
+		<link rel="stylesheet" type="text/css" href="./css/api.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/main.css"/>
+		<style>
+		.firstSearch{
+			padding-left:16px;
+			left:90px;
+			background: #FFFFFF;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" class="flex-wrap flex-vertical">
+			<header id="header">
+				<div class="topbar">
+					<div class="citylist fl" id="citylist"><img src="./image/logo.png" alt="" class="logo">
+					</div>
+					<div class="search firstSearch">
+						<input type="text" id="search" name="search" >
+						<img class="sear_img" src="./image/search.png">
+					</div>
+					<div class="fr headerico hr01 shopList"  tapmode="" onclick="openshopList();">
+						<img src="./image/shopList.png" alt="">
+					</div>
+				</div>
+			</header>
+			<div id="main" class="flex-con"></div>
+			<div id="footer" class="border-t">
+				<ul class="flex-wrap" >
+					<li tapmode="hover" onclick="openIndex();" class="flex-con active" >
+						首页
+					</li>
+					<li tapmode="hover" onclick="openCart();" class="flex-con" >
+						购物车
+					</li>
+					<li tapmode="hover" onclick="openYd();" class="flex-con" >
+						毅德购
+					</li>
+					<li tapmode="hover" onclick="openAdmin();" class="flex-con" >
+						用户中心
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	
+<script type="text/javascript" src="script/api.js"></script>
+<script type="text/javascript">
+	apiready = function() {
+		var $header = $api.dom('#header');
+		$api.fixIos7Bar($header);
+		var $footer = $api.dom('#footer');
+		var $header_h = $api.offset($header);
+		var $footer_h = $api.offset($footer);
+		api.openFrame({
+			name : 'main_frame',
+			url : './html/main_frame.html',
+			bgColor : 'rgba(0,0,0,.2)',
+			bounces : true,
+			rect : {
+				x : 0,
+				y : $api.dom('header').offsetHeight,
+				w : api.winWidth,
+				h : $api.dom('#main').offsetHeight
+			},
+		})
+	}
+	function openIndex() {
+		api.openFrame({
+			name : 'main_frame',
+			url : './html/main_frame.html',
+			bgColor : 'rgba(0,0,0,.2)',
+			bounces : false,
+			scrollEnabled : false,
+			rect : {
+				x : 0,
+				y : $api.dom('header').offsetHeight,
+				w : api.winWidth,
+				h : $api.dom('#main').offsetHeight
+			}
+		});
+	}
+
+	function openshopList() {
+		api.openWin({
+			name : 'shopList_window',
+			url : './html/shopList_window.html'
+		});
+	}
+
+	function openCart() {
+		api.openWin({
+			name : 'cart_window',
+			url : './html/cart_window.html'
+		});
+	}
+
+	function openYd() {
+		api.openWin({
+			name : 'yd_window',
+			url : './html/yd_window.html'
+		});
+	}
+
+	function openAdmin() {
+		api.openWin({
+			name : 'admin_window',
+			url : './html/admin_window.html'
+		});
+	}
+
+	//	 随意切换按钮
+	function randomSwitchBtn(tag) {
+		if (tag == $api.dom('#footer li.active'))
+			return;
+		var eFootLis = $api.domAll('#footer li'), eHeaderLis = $api.domAll('header li'), index = 0;
+		for (var i = 0, len = eFootLis.length; i < len; i++) {
+			if (tag == eFootLis[i]) {
+				index = i;
+			} else {
+				$api.removeCls(eFootLis[i], 'active');
+				$api.removeCls(eHeaderLis[i], 'active');
+			}
+		}
+		$api.addCls(eFootLis[index], 'active');
+		$api.addCls(eHeaderLis[index], 'active');
+		api.setFrameGroupIndex({
+			name : 'group',
+			index : index
+		});
+	}
+</script>
+</html>

@@ -1,0 +1,143 @@
+
+header {
+	background-color: #6ED6D7;
+	border: none;
+}
+header ul li {
+	height: 50px;
+	margin-top: -24px;
+	line-height: 50px;
+	text-align: center;
+	display: none;
+	color: #B3B3B3;
+	position: relative;
+	font-size: 18px;
+}
+header ul li.active {
+	display: block;
+}
+/* 头部样式 */
+.topbar {
+	background: #6ED6D7;
+	height: 50px;
+}
+.topbar_title {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 50px;
+	padding-left: 12px;
+}
+.hr01, .hr02 {
+	height: 28px;
+}
+.headerico {
+	padding: 11px 15px 11px 15px;
+}
+.headericohover {
+	background: #6ED6D7;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+
+/*第一头部*/
+#logo {
+	padding: 11px 0 0 10px;
+	height: 28px;
+}
+#citylist {
+	height: 50px;
+	line-height: 50px;
+	padding-left: 4px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.logo {
+	vertical-align: top;
+	width: 80px;
+	padding-top: 15px;
+}
+.back {vertical-align: top; width: 20px; padding-top: 15px;}	
+.search {
+	height: 34px;
+	line-height: 34px;
+	padding-left: 46px;
+	border-radius: 30px;
+	margin-top: 8px;
+	text-align:center;
+	position: absolute;
+	left: 20px;
+	right: 60px;
+	font-size: 14px;
+}
+.search img {
+	vertical-align: top;
+	width: 20px;
+	padding-top: 7px;
+	padding-right: 10px;
+}
+.firstSearch {
+	left: 90px;
+	right: 60px;
+	color: #FFFFFF;
+}
+.firstSearch input {
+	width: 100%;
+	border-radius: 10px;
+	outline: none;
+	color: #404040;
+	text-indent: 4px;
+}
+.shopList img {
+	vertical-align: top;
+	width: 30px;
+	padding-left: 30px;
+}
+.firstSearch .sear_img {
+	float: right;
+	margin-top: -32px;
+}
+.firstSearch input:focus {
+	outline: none;
+}
+#footer {
+	background-color: #3F3F3F;
+	color: #B3B3B3;
+}
+#footer ul li {
+	padding-top: 36px;
+	padding-bottom: 4px;
+	background: url() no-repeat center 2px;
+	background-size: auto 30px;
+	text-align: center;
+}
+#footer ul li.active {
+	color: #6ED6D7;
+}
+#footer ul li:nth-child(1) {
+	background-image: url(../image/index.png);
+}
+#footer ul li:nth-child(2) {
+	background-image: url(../image/cart.png);
+}
+#footer ul li:nth-child(3) {
+	background-image: url(../image/about.png);
+}
+#footer ul li:nth-child(4) {
+	background-image: url(../image/admin.png);
+}
+#footer ul li:nth-child(1).active {
+	background-image: url(../image/index01.png);
+}
+#footer ul li:nth-child(2).active {
+	background-image: url(../image/cart01.png);
+}
+#footer ul li:nth-child(3).active {
+	background-image: url(../image/about01.png);
+}
+#footer ul li:nth-child(4).active {
+	background-image: url(../image/admin01.png);
+}

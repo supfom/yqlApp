@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+    <style>
+    	html, body {
+				width: 100%;
+				min-height: 100%;
+				background: #e5e5e5;
+			}
+		.logcs,.staust{
+			background: #FFFFFF;
+			color:#8D8D8D;
+			font-size: 14px;
+		}
+		.logcs_left{
+			padding:4px;
+			width: 36px;
+		}
+		.logcs_left img{
+			width: 100%;
+		}
+		.logcs_right{
+			padding-left: 36px;
+    		padding-bottom: 10px;
+		    float: left;
+		    line-height:20px;
+		    margin-top: -36px;
+		    margin-left: 10px;
+		}
+		.active{
+			color:#282828;
+		}
+		.result{
+			color: #BD0E0E;
+		}
+		.staust{
+			margin-top: 6px;
+		}
+		.staust ul li.active{
+		    background: url(../image/logisticsBig.png)no-repeat 5px 10px;
+		    background-size: auto 24px;
+		}
+		.active .contm{
+		    border-left: #6ED6D7 solid 1px;
+		    color: #6ED6D7;
+		}
+		.staust ul li{
+			list-style: none;
+		    background: url(../image/logisticsStaust.png)no-repeat 6px 12px;
+		    background-size: auto 20px;
+		}
+		.contm{    
+			padding: 6px 18px;
+		    margin: 0px 16px;
+		    border-left: #cbcbcb solid 1px;
+		}
+    </style>
+</head>
+<body>
+	<div class="logcs clearfix">
+		<div class="logcs_left clearfix">
+			<img src="../image/logisticsCar.png">
+		</div>
+		<div class="logcs_right clearfix">
+			<p><span class="logcs_status active">物流状态：</span><label class="result">签收成功</label></p>
+			<p><span class="logcs_num">订单号：</span><label>2230864975551005</label></p>
+			<p><span class="logcs_msg">信息来源：</span><label>韵达快递</label></p>
+		</div>
+	</div>
+	<div class="staust clearfix">
+		<ul>
+			<li class="active">
+				<div class="contm">
+					<p class="content">快件已签收,签收人是快递柜，签收网点是深圳宝安建安分部(0755-27889725,0755-27889463，0755-61604833)</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">快件已被GD灵芝新村3号岗亭e栈【自提柜】代收，如有问题请联系派件员</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">深圳宝安建安分部(0755-27889725,0755-27889463，0755-61604833)的梁西京15220119307正在派件</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">快件到达深圳宝安建安分部(0755-27889725,0755-27889463，0755-61604833)，上一站是深圳分拨中心，扫描员是小敏</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">快件由深圳分拨中心发往深圳宝安建安分部(0755-27889725,0755-27889463，0755-61604833)</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">快件由深圳分拨中心发往深圳分拨中心</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">北京集散已进行装袋扫描</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">第三方卖家已经开始拣货</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">您的订单已进入第三方卖家库房，准备出库</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+			<li>
+				<div class="contm">
+					<p class="content">您的订单预计10月20日-22日送达</p>
+					<p class="time">2015-10-25   8:20:35</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="../script/api.js"></script>
+<script type="text/javascript">
+	apiready = function(){
+		
+	};
+</script>
+</html>

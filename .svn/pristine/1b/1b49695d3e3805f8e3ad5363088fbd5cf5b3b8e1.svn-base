@@ -1,0 +1,142 @@
+<!DOCTYPE html>	
+<html>	
+<head>	
+  <meta charset="utf-8">	
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>	
+  <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">	
+  <title>商城首页</title>	
+  <link rel="shortcut icon" href="/favicon.ico">	
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">	
+  <link rel="stylesheet" type="text/css" href="../css/api.css" />
+  <link rel="stylesheet" type="text/css" href="../css/common.css">	
+
+</head>	
+<body>	
+	<div id='slide' class='swipe'>	
+	    <div class='swipe-wrap' id="banner-content">	
+	        <div onclick="" tapmode="">	
+	            <img src="../res/images/banner.png"/>	
+	        </div>	
+	        <div onclick="" tapmode="">	
+	            <img src="../res/images/banner.png"/>	
+	        </div>	
+	        <div onclick="" tapmode="">	
+	            <img src="../res/images/banner.png"/>	
+	        </div>	
+	        <div onclick="" tapmode="">	
+	            <img src="../res/images/banner.png"/>	
+	        </div>	
+	        <div onclick="" tapmode="">	
+	            <img src="../res/images/banner.png"/>	
+	        </div>	
+	    </div>	
+	    <div id="pointer">	
+	        <a class="active"></a>	
+	        <a></a>	
+	        <a></a>	
+	        <a></a>	
+	        <a></a>	
+	    </div>	
+	</div>	
+	<div class="divider"></div>	
+	<div class="subtitle">最新活动</div>	
+	<ul class="recommand_row">	
+		<li class="recommand_card" tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/activity.png" alt="">	
+				<!--<div class="videotitle">林依晨订婚宴现场曝光</div>	-->
+			</div>	
+		</li>	
+		<li class="recommand_card"  tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/activity01.png" alt="">	
+				<!-- <div class="videotitle">网传张歆艺杨树鹏离婚</div>	 -->
+			</div>	
+		</li>	
+	</ul>	
+	<div class="divider"></div>	
+	<div class="subtitle">毅德精选</div>	
+	<ul class="tvshow_row">	
+		<li class="recommand_card" tapmod="card_hover" onclick="shopDetail();">	
+			<div class="innerCard">	
+				<img src="../res/images/shop.png" alt="">	
+				<!--<div class="update">更新至31集</div>	-->
+				<div class="videotitle">北平无战事</div>	
+				<div class="videosubtitle">￥<span class="money">150.00</span></div>	
+			</div>	
+		</li>	
+		<li class="recommand_card" tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/shop.png" alt="">	
+				<div class="videotitle">风中奇缘</div>	
+				<div class="videosubtitle">￥<span class="money">136.00</span></div>	
+			</div>	
+		</li>
+		<li class="recommand_card" tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/shop1.png" alt="">	
+				<div class="videotitle">北平无战事</div>	
+				<div class="videosubtitle">￥<span class="money">124.00</span></div>	
+			</div>	
+		</li>	
+		<li class="recommand_card" tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/shop1.png" alt="">	
+				<div class="videotitle">风中奇缘</div>	
+				<div class="videosubtitle">￥<span class="money">89.00</span></div>	
+			</div>	
+		</li>	<li class="recommand_card" tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/shop2.png" alt="">	
+				<div class="videotitle">北平无战事</div>	
+				<div class="videosubtitle">￥<span class="money">234.00</span></div>	
+			</div>	
+		</li>	
+		<li class="recommand_card" tapmod="card_hover" onclick="">	
+			<div class="innerCard">	
+				<img src="../res/images/shop2.png" alt="">	
+				<div class="videotitle">风中奇缘</div>	
+				<div class="videosubtitle">￥<span class="money">139.00</span></div>	
+			</div>	
+		</li>	
+	</ul>	
+</body>	
+<script type="text/javascript" src="../script/api.js"></script>	
+<script type="text/javascript" src="../script/swipe.js"></script>	
+<script>	
+	apiready = function (){	
+		api.setRefreshHeaderInfo({	
+			visible: true,	
+			bgColor: 'rgba(0,0,0,0)',	
+			textColor: '#666',	
+			textDown: '下拉刷新',	
+			textUp: '释放刷新'		
+		}, function(ret, err){	
+		    api.refreshHeaderLoadDone();	
+		});	
+	};	
+	function initSlide() {	
+        var $pointer = $api.byId('pointer');	
+        window.mySlide = Swipe(slide, {	
+            continuous: true,	
+            disableScroll: true,	
+            stopPropagation: true,	
+            callback: function (index, element) {	
+                console.log();	
+                var $actA = $api.dom($pointer, 'a.active');	
+                $api.removeCls($actA, 'active');	
+                $api.addCls($api.eq($pointer, index + 1), 'active');	
+            },	
+            transitionEnd: function (index, element) {	
+            }	
+        });	
+    }	
+    initSlide();	
+    function shopDetail(){	
+				api.openWin({
+		            name: 'shopDetail_window',
+		            url: './shopDetail_window.html'
+	            });
+            }
+</script>	
+</html>	

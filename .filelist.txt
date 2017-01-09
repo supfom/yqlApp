@@ -8,9 +8,9 @@
 /A6923308446363/html/main_frame.html
 /A6923308446363/image/ppjj.png
 /A6923308446363/image/more_icon_10.png
+/A6923308446363/html/addressList.html
 /A6923308446363/image/food_u.png
 /A6923308446363/image/93.png
-/A6923308446363/html/addressList.html
 /A6923308446363/html/logistics_frame.html
 /A6923308446363/image/ic_arrow_down_black.png
 /A6923308446363/html/addressEdit.html

@@ -2322,6 +2322,7 @@ a.a-sequence .iconfont.icon-icon-square:before {
 	color: #666;
 	margin-top: 1rem;
 	margin-bottom: .4rem;
+	line-height: 2.8rem;
 }
 .menu-right h5:first-child {
 	margin-top: 0;
@@ -3576,46 +3577,4 @@ footer.logo img {
 	border-radius: 0.5rem;
 	width: 45%;
 	margin-top: 0.8rem;
-}
-.zhjc {
-	color: #C6D568
-}
-.jjby {
-	color: #E19360
-}
-.jydq {
-	color: #799ADE
-}
-.ppjj {
-	color: #79C49C
-}
-.bhxsp {
-	color: #E0A3AF
-}
-.wjjd {
-	color: #73B9D9
-}
-.qpxc {
-	color: #BAABEC
-}
-.zhjcBg {
-	background: #C6D568
-}
-.jjbyBg {
-	background: #E19360
-}
-.jydqBg {
-	background: #799ADE
-}
-.ppjjBg {
-	background: #79C49C
-}
-.bhxspBg {
-	background: #E0A3AF
-}
-.wjjdBg {
-	background: #73B9D9
-}
-.qpxcBg {
-	background: #BAABEC
 }

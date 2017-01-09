@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>frame</title>
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+		<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+		<link rel="stylesheet" href="../css/api.css" />
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<link rel="stylesheet" href="../css/swiper-3.2.5.min.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/ectouch.css" />
+		<link rel="stylesheet" href="../css/search.css" />
+	</head>
+	<body style="max-width:640px;font-size: 14px;">
+		<div id="loading"><img src="images/loading.gif" />
+		</div>
+		<div class="con">
+			<div class="category-top"></div>
+			<aside>
+				<div class="menu-left scrollbar-none" id="sidebar">
+					<ul>
+						<li  class="active">
+							装修建材
+						</li>
+						<li >
+							家居装饰
+						</li>
+						<li >
+							家用电器
+						</li>
+						<li >
+							百货小商品
+						</li>
+						<li >
+							家具建材
+						</li>
+						<li >
+							五金机电
+						</li>
+						<li >
+							汽配型材
+						</li>
+					</ul>
+				</div>
+			</aside>
+			<section class="menu-right padding-all j-content">
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-right padding-all j-content" style="display:none">
+				
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-right padding-all j-content" style="display:none">
+				
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-right padding-all j-content" style="display:none">
+				
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-right padding-all j-content" style="display:none">
+				
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-right padding-all j-content" style="display:none">
+				
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+			<section class="menu-right padding-all j-content" style="display:none">
+				
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>家电卫浴</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop1.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+				<h5>五金机电</h5>
+				<ul>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+					<li class="w-3">
+						<a href="#"></a>
+						<img src="../res/images/shop2.png" /><span>水龙头</span>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<script type="text/javascript">
+			//设置cookie
+			function setCookie(cname, cvalue, exdays) {
+				var d = new Date();
+				d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+				var expires = "expires=" + d.toUTCString();
+				document.cookie = cname + "=" + cvalue + "; " + expires;
+			}
+
+			function clearHistroy() {
+				setCookie('ECS[keywords]', '', -1);
+				document.getElementById("search_histroy").style.visibility = "hidden";
+			}
+		</script>
+		<script type="text/javascript" src="../script/api.js"></script>
+		<script type="text/javascript" src="../script/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="../script/swiper-3.2.5.min.js"></script>
+		<script type="text/javascript" src="../script/ectouch.js"></script>
+		<script type="text/javascript" src="../script/jquery.json.js"></script>
+		<script type="text/javascript" src="../script/common.js"></script>
+		<script>
+			apiready = function() {
+			}
+			$(function($) {
+				$('#sidebar ul li').click(function() {
+					$(this).addClass('active').siblings('li').removeClass('active');
+					var index = $(this).index();
+					$('.j-content').eq(index).show().siblings('.j-content').hide();
+				})
+			})
+		</script>
+	</body>
+</html>

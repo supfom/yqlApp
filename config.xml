@@ -14,6 +14,7 @@
   <preference name="debug" value="true"/>  
   <preference name="statusBarAppearance" value="true"/>  
   <preference name="urlScheme" value="myscheme"/>  
+  <preference name="pageBounce" value="true"/>  
   <permission name="location"/>  
   <permission name="internet"/>  
   <access origin="*"/> 

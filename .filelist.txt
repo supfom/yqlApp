@@ -5,6 +5,7 @@
 /A6923308446363/image/qpxc.png
 /A6923308446363/image/api_1.png
 /A6923308446363/image/main_index_search_pressed.png
+/A6923308446363/icon/wx.png
 /A6923308446363/html/main_frame.html
 /A6923308446363/image/ppjj.png
 /A6923308446363/image/more_icon_10.png
@@ -132,6 +133,7 @@
 /A6923308446363/image/login.png
 /A6923308446363/image/title_home_arrow_down_normal.png
 /A6923308446363/image/pager_tab_menu_indicator.png
+/A6923308446363/icon/yl.png
 /A6923308446363/html/shopDetail_window.html
 /A6923308446363/res/images/tmall_checkbox_on.png
 /A6923308446363/image/topbar_search.png
@@ -143,6 +145,7 @@
 /A6923308446363/image/myfas.png
 /A6923308446363/image/xians.png
 /A6923308446363/image/like.png
+/A6923308446363/icon/zfb.png
 /A6923308446363/css/font/fontawesome-webfont.svg
 /A6923308446363/image/notification.png
 /A6923308446363/image/loading_more.gif
@@ -200,6 +203,7 @@
 /A6923308446363/html/shopResult_frame.html
 /A6923308446363/res/images/banner.png
 /A6923308446363/image/arrow_right.png
+/A6923308446363/html/pay_window.html
 /A6923308446363/image/delete.png
 /A6923308446363/image/cartIcon.png
 /A6923308446363/image/dock.png
@@ -225,18 +229,21 @@
 /A6923308446363/image/ic_arrow_up_black.png
 /A6923308446363/image/logisticsBig.png
 /A6923308446363/html/frame2.html
+/A6923308446363/html/pay_frame.html
 /A6923308446363/html/admin_window.html
 /A6923308446363/image/cart_shop.png
 /A6923308446363/image/about.png
 /A6923308446363/image/location_big.png
 /A6923308446363/image/more_icon_50.png
 /A6923308446363/html/yd_frame.html
+/A6923308446363/icon/zyb.png
 /A6923308446363/image/91.png
 /A6923308446363/image/more_icon_45.png
 /A6923308446363/html/shopList_window.html
 /A6923308446363/html/start.html
 /A6923308446363/image/more_icon_70.png
 /A6923308446363/image/main_index_home_normal.png
+/A6923308446363/icon/xyk.png
 /A6923308446363/image/orderResult.png
 /A6923308446363/html/login.html
 /A6923308446363/image/dianping.png

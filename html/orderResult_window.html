@@ -150,8 +150,8 @@
 					<li class="colson active" onclick="api.closeWin();">
 						取消
 					</li>
-					<li class="sure on" onclick="">
-						确定
+					<li class="sure on" onclick="openPay();">
+						去支付
 					</li>
 					
 				</ul>
@@ -175,13 +175,23 @@
 					y : $header_h,
 					w : 'auto',
 					h : api.winHeight - $header_h - $footer_h
-				}
+				},
+				bounces : false,
+				opaque : false,
+				vScrollBarEnabled : false,
+				hScrollBarEnabled : false
 			})
 		}
 		function openIndex() {
 			api.openWin({
 				name : 'index',
 				url : '../index.html'
+			});
+		}
+		function openPay() {
+			api.openWin({
+				name : 'pay_window',
+				url : 'pay_window.html'
 			});
 		}
 
